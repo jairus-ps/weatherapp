@@ -4,7 +4,7 @@ This is a weather app that provides weather forecasts based on location. It fetc
 
 ## Live Demo
 
-You can view the live demo of the weather app here:
+live demo of the weather app here:
 
 [Weather App Live Demo](https://jpsweatherapp.netlify.app/)
 
