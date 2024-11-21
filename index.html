@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <header>
+            <h1>Weather Hub</h1>
+            <button id="toggleDarkMode" class="dark-mode-btn">
+                <img src="images/icons/dark_mode.png" alt="Toggle Dark Mode" id="darkModeIcon">
+            </button>
+        </header>
+        <main>
+            <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Search city..." autocomplete="off">
+                <button id="searchBtn">
+                    <img src="images/icons/search.png" alt="Search" id="searchIcon">
+                </button>
+                <ul id="suggestions"></ul>
+            </div>
+            <div id="weatherDetails" class="hidden">
+                <h2 id="cityName"></h2>
+                <img id="weatherIcon" alt="Weather Icon">
+                <p id="weatherMain"></p>
+                <p id="description"></p>
+                <div class="temp-details">
+                    <p>Temp: <span id="temperature"></span>°C</p>
+                    <p>Feels Like: <span id="feelsLike"></span>°C</p>
+                </div>
+                <div class="extra-details">
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind: <span id="wind"></span> m/s</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
